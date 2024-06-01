@@ -265,6 +265,11 @@ body {
     background-color: #D42472;
 }
 
+.flip-card-back-color-premierpro {
+    background-color: #00005B;
+
+}
+
 .resize {
     width: 200px;
     height: 200px;
