@@ -16,6 +16,8 @@ body {
 
 html {
     scroll-snap-type: y mandatory;
+    scrollbar-width:thin;
+    scrollbar-color: #00FF5C9E #2b2727;
 }
 
 .scroll-type {
