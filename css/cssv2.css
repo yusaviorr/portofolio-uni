@@ -181,6 +181,20 @@ body {
         linear-gradient(#000 0 0) content-box;
 }
 
+.invis-div {
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    z-index: 4;
+}
+
+.invis-div-for-name {
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    z-index: 4;
+}
+
 .flex-card {
     background-color: transparent;
     width: 200px;
@@ -281,4 +295,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.flexx-center-extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
 }
