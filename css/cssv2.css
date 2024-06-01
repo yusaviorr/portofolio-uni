@@ -15,7 +15,7 @@ body {
 }
 
 html {
-    scroll-snap-type: y proximitys;
+    scroll-snap-type: y mandatory;
 }
 
 .scroll-type {
