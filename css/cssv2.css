@@ -14,7 +14,7 @@ body {
     padding: 0;
 }
 
-html {
+#green-scroll {
     scroll-snap-type: y mandatory;
     scrollbar-width:thin;
     scrollbar-color: #00FF5C9E #2b2727;
@@ -46,7 +46,7 @@ html {
     /* flex box pt nav bar*/
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 50px 0px 0px 0px;
 }
 
@@ -104,6 +104,13 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.resize-color-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -5px;
 }
 
 #main-content-sizeing {
