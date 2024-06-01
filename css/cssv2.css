@@ -16,8 +16,14 @@ body {
 
 #green-scroll {
     scroll-snap-type: y mandatory;
-    scrollbar-width:thin;
+    scrollbar-width: thin;
     scrollbar-color: #00FF5C9E #2b2727;
+}
+
+#red-scroll {
+    scroll-snap-type: y mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #ff00009e #2b2727;
 }
 
 .scroll-type {
@@ -56,14 +62,6 @@ body {
     font-style: normal;
     font-size: 24px;
     text-decoration: none;
-}
-
-.text-effect:hover {
-    color: #39FF14;
-}
-
-.transparent-color {
-    color: #00FF5C9E;
 }
 
 .main-text-font {
@@ -149,7 +147,6 @@ body {
     width: 900px;
     height: 400px;
     border-radius: 35px;
-    background-color: #14D7285E;
     margin: 10px;
 }
 
@@ -178,24 +175,6 @@ body {
 
 .text-align {
     text-align: center;
-}
-
-.corner-border {
-
-    --s: 20px;
-    /* the size on the corner */
-    --t: 5px;
-    /* the thickness of the border */
-    --g: 0px;
-    /* the gap between the border and image */
-
-    padding: calc(var(--g) + var(--t));
-    outline: var(--t) solid #00FF5C9E;
-    /* the color here */
-    outline-offset: calc(-1*var(--t));
-    mask:
-        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
-        linear-gradient(#000 0 0) content-box;
 }
 
 .invis-div {
@@ -411,4 +390,66 @@ body {
 
 .bg-color-for-project-transparent-red {
     background-color: #ff0000a0;
+}
+
+/* Color Picker */
+
+.transparent-color-green {
+    color: #00FF5C9E;
+}
+
+.text-effect-green:hover {
+    color: #39FF14;
+}
+
+.transparent-color-red {
+    color: #ff00009e;
+}
+
+.text-effect-red:hover {
+    color: #ff1414;
+}
+
+.corner-border-red {
+
+    --s: 20px;
+    /* the size on the corner */
+    --t: 5px;
+    /* the thickness of the border */
+    --g: 0px;
+    /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #ff00009e;
+    /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+        linear-gradient(#000 0 0) content-box;
+}
+
+.corner-border-green {
+
+    --s: 20px;
+    /* the size on the corner */
+    --t: 5px;
+    /* the thickness of the border */
+    --g: 0px;
+    /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #00FF5C9E;
+    /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+        linear-gradient(#000 0 0) content-box;
+}
+
+.box-bg-color-green {
+    background-color: #14D7285E;
+}
+
+.box-bg-color-red {
+    background-color: #ff000063;
 }
