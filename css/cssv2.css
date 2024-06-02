@@ -27,6 +27,14 @@ body {
     scrollbar-color: #ff00009e #2b2727;
 }
 
+.orange-scroll {
+    scrollbar-color: #ffa600a0 #2b2727;
+}
+
+.blue-scroll {
+    scrollbar-color:  #0000ffa0 #2b2727;
+}
+
 .scroll-type {
     scroll-snap-align: start;
 }
@@ -411,22 +419,20 @@ body {
     color: #ff1414;
 }
 
-.corner-border-red {
+.transparent-color-orange {
+    color: #ffa600a0;
+}
 
-    --s: 20px;
-    /* the size on the corner */
-    --t: 5px;
-    /* the thickness of the border */
-    --g: 0px;
-    /* the gap between the border and image */
+.text-effect-orange:hover {
+    color: #ff8c00;
+}
 
-    padding: calc(var(--g) + var(--t));
-    outline: var(--t) solid #ff00009e;
-    /* the color here */
-    outline-offset: calc(-1*var(--t));
-    mask:
-        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
-        linear-gradient(#000 0 0) content-box;
+.transparent-color-blue {
+    color: #0000ffa0;
+}
+
+.text-effect-blue:hover {
+    color: #0000ff;
 }
 
 .corner-border-green {
@@ -447,6 +453,60 @@ body {
         linear-gradient(#000 0 0) content-box;
 }
 
+.corner-border-red {
+
+    --s: 20px;
+    /* the size on the corner */
+    --t: 5px;
+    /* the thickness of the border */
+    --g: 0px;
+    /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #ff00009e;
+    /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+        linear-gradient(#000 0 0) content-box;
+}
+
+.corner-border-orange {
+
+    --s: 20px;
+    /* the size on the corner */
+    --t: 5px;
+    /* the thickness of the border */
+    --g: 0px;
+    /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #ffa600a0;
+    /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+        linear-gradient(#000 0 0) content-box;
+}
+
+.corner-border-blue {
+
+    --s: 20px;
+    /* the size on the corner */
+    --t: 5px;
+    /* the thickness of the border */
+    --g: 0px;
+    /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #0000ffa0;
+    /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+        linear-gradient(#000 0 0) content-box;
+}
+
 .box-bg-color-green {
     background-color: #14D7285E;
 }
@@ -455,8 +515,30 @@ body {
     background-color: #ff000063;
 }
 
-.navElement1{} /*pt js*/
+.box-bg-color-orange {
+    background-color: #ffa600a0;
+}
 
-.navElement2{}
+.box-bg-color-blue {
+    background-color: #0000ffa0;
+}
 
-.navElement3{}
+/*pt js*/
+
+#navElement1 {}
+
+#navElement2 {}
+
+#navElement3 {}
+
+#navColorIconGreen {}
+
+#navColorIconRed {}
+
+#navColorIconOrange {}
+
+#navColorIconBlue {}
+
+#navColorIconGreen:hover {}
+
+#navColorIconGreen{}
