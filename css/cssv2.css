@@ -14,15 +14,16 @@ body {
     padding: 0;
 }
 
-#green-scroll {
+#scroll-bar {
     scroll-snap-type: y mandatory;
     scrollbar-width: thin;
+}
+
+.green-scroll {
     scrollbar-color: #00FF5C9E #2b2727;
 }
 
-#red-scroll {
-    scroll-snap-type: y mandatory;
-    scrollbar-width: thin;
+.red-scroll {
     scrollbar-color: #ff00009e #2b2727;
 }
 
@@ -453,3 +454,9 @@ body {
 .box-bg-color-red {
     background-color: #ff000063;
 }
+
+.navElement1{} /*pt js*/
+
+.navElement2{}
+
+.navElement3{}

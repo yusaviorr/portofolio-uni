@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="green-scroll">
+<html id="scroll-bar" class="green-scroll">
 
 <head>
     <link rel="stylesheet" href="./css/cssv2.css">
@@ -15,18 +15,18 @@
         <!-- bara de navigare -->
 
         <div class="flexx-center-extra">
-            <div class="invis-div-for-name corner-border-green"></div>
+            <div id="borderElement1" class="invis-div-for-name corner-border-green"></div>
         </div>
         <div class="flex-container-nav" id="nav-bar-sizeing"> <!-- meniu -->
             <div class="flex-center">
-                <a href="#"><img class="resize-color-icon" src="./images/green_dot.png"></a>
-                <a href="./red-home.html"><img class="resize-color-icon" src="./images/red_dot_hole.png"></a>
-                <a href="./orange-home.html"><img class="resize-color-icon" src="./images/orange_dot_hole.png"></a>
-                <a href="./blue-home.html"><img class="resize-color-icon" src="./images/blue_dot_hole.png"></a>
+                <a href="#" onclick="changeColorNavGreen()"><img id="navColorIconGreen" class="resize-color-icon" src="./images/green_dot.png"></a>
+                <a href="#" onclick="changeColorNavRed()"><img id="navColorIconRed" class="resize-color-icon" src="./images/red_dot_hole.png"></a>
+                <a href="#"><img id="navColorIconOrange" class="resize-color-icon" src="./images/orange_dot_hole.png"></a>
+                <a href="#"><img id="navColorIconBlue" class="resize-color-icon" src="./images/blue_dot_hole.png"></a>
             </div>
-            <a class="nav-text-font text-effect-green transparent-color-green" href="#projects-section">Projects</a>
-            <a class="nav-text-font text-effect-green transparent-color-green" href="#skills-section">Skills</a>
-            <a class="nav-text-font text-effect-green transparent-color-green" href="#contact-section">Contact</a>
+            <a id="navElement1" class="nav-text-font text-effect-green transparent-color-green" href="#projects-section">Projects</a>
+            <a id="navElement2" class="nav-text-font text-effect-green transparent-color-green" href="#skills-section">Skills</a>
+            <a id="navElement3" class="nav-text-font text-effect-green transparent-color-green" href="#contact-section">Contact</a>
         </div>
 
         <div class="flex-center-name" id="main-content-sizeing">
@@ -39,10 +39,10 @@
 
     <div class="fullscreen scroll-type">
         <div class="flexx-center-extra">
-            <div class="invis-div corner-border-green"></div>
+            <div id="borderElement2" class="invis-div corner-border-green"></div>
         </div>
         <div class="container" id="projects-section">
-            <div class="box box-bg-color-green">
+            <div id="boxElement1" class="box box-bg-color-green">
                 <h1 class="main-text-font text-align format-text white-color">Projects</h1>
 
                 <div class="flex-apply">
@@ -82,13 +82,12 @@
             </div>
         </div>
     </div>
-
     <div class="fullscreen scroll-type">
         <div class="flexx-center-extra">
-            <div class="invis-div corner-border-green"></div>
+            <div id="borderElement3" class="invis-div corner-border-green"></div>
         </div>
         <div class="container" id="skills-section">
-            <div class="box box-bg-color-green">
+            <div id="boxElement2" class="box box-bg-color-green">
                 <h1 class="main-text-font text-align format-text white-color">Skills</h1>
 
                 <div class="flex-apply">
@@ -131,10 +130,10 @@
 
     <div class="fullscreen scroll-type">
         <div class="flexx-center-extra">
-            <div class="invis-div corner-border-green"></div>
+            <div id="borderElement4" class="invis-div corner-border-green"></div>
         </div>
         <div class="container" id="contact-section">
-            <div class="box box-bg-color-green">
+            <div id="boxElement3" class="box box-bg-color-green">
                 <h1 class="main-text-font text-align format-text white-color">Contact</h1>
 
                 <div class="flex-apply">
